@@ -19,14 +19,18 @@ Tor ağındaki .onion uzantılı sitelerden hacker temalı olanları hedef alara
 - Tor Service (Arka planda çalışıyor olmalı)
 - Linux / macOS / Windows
 
+
+```
 ### Çalıştırma Adımları
 
 1. **Repoyu Klonlayın:**
+
 ```bash
 git clone (https://github.com/Muzoovy4606/CTI-THOR-SCRAPER
 cd CTI-THOR-SCRAPER
 
 ```
+
 
 2. **Bağımlılıkları Yükleyin:**
 
