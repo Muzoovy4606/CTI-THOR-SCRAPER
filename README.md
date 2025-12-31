@@ -1,4 +1,4 @@
-```markdown
+```text
 # Thor Scraper - Tor Network CTI Tool
 
 Bu proje, Sibervatan "Yıldız CTI" eğitimi kapsamında geliştirilmiş, **Go (Golang)** tabanlı bir Siber Tehdit İstihbaratı (CTI) toplama aracıdır.
