@@ -1,4 +1,4 @@
-```text
+```markdown
 # Thor Scraper - Tor Network CTI Tool
 
 Bu proje, Sibervatan "Yıldız CTI" eğitimi kapsamında geliştirilmiş, **Go (Golang)** tabanlı bir Siber Tehdit İstihbaratı (CTI) toplama aracıdır.
@@ -22,32 +22,46 @@ Tor ağındaki .onion uzantılı sitelerden hacker temalı olanları hedef alara
 ### Çalıştırma Adımları
 
 1. **Repoyu Klonlayın:**
-   git clone https://github.com/Muzoovy4606/CTI-THOR-SCRAPER
-   cd CTI-THOR-SCRAPER
+```bash
+git clone (https://github.com/Muzoovy4606/CTI-THOR-SCRAPER
+cd CTI-THOR-SCRAPER
+
 ```
 
 2. **Bağımlılıkları Yükleyin:**
+
 ```bash
 go mod tidy
 
 ```
 
+3. **targets.yaml Dosyasını Oluşturun:**
+Güvenlik ve gizlilik nedeniyle (Ransomware/Hacker grubu linkleri içerdiği için) **targets.yaml** dosyası repoya yüklenmemiştir. Projeyi çalıştırmadan önce ana dizinde `targets.yaml` dosyası oluşturup hedeflerinizi içine eklemelisiniz.
+4. **Tor Servisini Başlatın (Linux/Arch):**
 
-3. **Tor Servisini Başlatın (Linux/Arch):**
 ```bash
 sudo systemctl start tor
 
 ```
 
-
 *(Not: Tor servisinin 9050 portunda çalıştığından emin olun.)*
-4. **Aracı Çalıştırın:**
+
+5. **Aracı Çalıştırın:**
+
 ```bash
 go run main.go
 
 ```
 
+### Linux Binary Kullanımı (Derlenmiş Dosya)
 
+Kodları tekrar derlemekle uğraşmadan, repo içerisinde gelen hazır Linux çalıştırılabilir dosyasını (binary) kullanmak için şu komutları uygulayın:
+
+```bash
+chmod +x thor-scraper
+./thor-scraper
+
+```
 
 ## 📂 Çıktı Yapısı (Output)
 
@@ -56,10 +70,10 @@ Program çalıştığında `output/` klasörü altında şu yapıyı oluşturur:
 ```text
 output/
 ├── example.onion/
-│   ├── index.html        # Sitenin HTML kaynak kodu
-│   ├── screenshot.png    # Tam sayfa ekran görüntüsü
-│   └── site_info.txt     # Meta veriler (Başlık, Tarama Tarihi)
-└── scan_report.log       # Detaylı durum raporu (SUCCESS/FAIL kayıtları)
+│   ├── index.html        # Sitenin HTML kaynak kodu
+│   ├── screenshot.png    # Tam sayfa ekran görüntüsü
+│   └── site_info.txt     # Meta veriler (Başlık, Tarama Tarihi)
+└── scan_report.log       # Detaylı durum raporu (SUCCESS/FAIL kayıtları)
 
 ```
 
@@ -67,4 +81,6 @@ output/
 SiberVatan CTI çalışması kapsamında <a href="https://www.google.com/search?q=https://github.com/Muzoovy4606">Muzoovy</a> tarafından geliştirilmiştir.
 </p>
 
+```
 
+```
